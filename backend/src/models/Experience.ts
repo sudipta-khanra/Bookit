@@ -1,11 +1,13 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export interface ISlot {
+  _id?: mongoose.Types.ObjectId; 
   date: Date;
   time: string;
   capacity: number;
   booked: number;
 }
+
 
 export interface IExperience extends Document {
   title: string;
