@@ -30,7 +30,7 @@ export default function BookingsPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/bookings")
+    fetch("https://bookit-rysm.onrender.com/")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch bookings");
         return res.json();
