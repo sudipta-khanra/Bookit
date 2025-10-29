@@ -10,12 +10,12 @@ const api = axios.create({
 
 export const fetchExperiences = async (): Promise<Experience[]> => {
   const res = await api.get('/experiences');
-  return res.data.data;
+  return res.data.experiences || res.data.data || [];
 };
 
 export const fetchExperience = async (id: string): Promise<Experience> => {
   const res = await api.get(`/experiences/${id}`);
-  return res.data.data;
+  return res.data.experience || res.data.data;
 };
 
 export const validatePromo = async (code: string, experienceId?: string) => {
