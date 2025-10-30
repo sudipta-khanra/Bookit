@@ -92,8 +92,7 @@ Create a `.env` file inside the **backend** folder:
 
 ```
 PORT=4000
-MONGO_URI=mongodb+srv://sudiptakhanra0612:fdgdjdfkjgdfk121554@bookit.ptamyxx.mongodb.net/bookit?retryWrites=true&w=majority
-```
+
 
 Run the backend:  
 
