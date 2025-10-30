@@ -1,60 +1,78 @@
-# BookIt: Experiences & Slots
+# 🧳 BookIt: Experiences & Slots
 
-**BookIt** is a fullstack web application that allows users to explore unique travel experiences, view slot availability, and make bookings seamlessly.
-This project demonstrates an end-to-end booking flow — from browsing to checkout to confirmation — using modern web technologies.
+**BookIt** is a fullstack web application that allows users to explore unique travel experiences, view available slots, and make seamless bookings.  
+This project demonstrates an **end-to-end booking flow** — from browsing to checkout to confirmation — built with **modern web technologies**.
+
+---
+
+## 🎯 Task Summary
+
+**Project Name:** BookIt: Experiences & Slots  
+**Role:** Fullstack Developer Intern  
+**Objective:**  
+Build a complete end-to-end web application where users can explore travel experiences, select available slots, and complete bookings. The project tests both frontend and backend skills, focusing on real-world fullstack workflows, API integration, and clean UI design.
+
+**Figma Design:**  
+[🔗 View Figma Design](https://www.figma.com/design/8X6E1Ev8YdtZ3erV0Iifvb/HD-booking?node-id=0-1&p=f&t=K4scwnxfIHmfbb2a-0)
 
 ---
 
 ## 🚀 Features
 
-* Browse travel experiences dynamically fetched from the backend
-* View detailed experience info with available slots
-* Book an experience with user details and promo codes
-* Responsive design (mobile + desktop)
-* Real-time booking confirmation
-* Fully integrated backend with database storage
+- Browse travel experiences dynamically fetched from the backend  
+- View detailed experience info with available slots  
+- Book an experience with user details and promo codes  
+- Responsive design (mobile + desktop)  
+- Real-time booking confirmation  
+- Fully integrated backend with database storage  
 
 ---
 
 ## 🧩 Tech Stack
 
-### Frontend
+### 🌐 Frontend  
+- **React** (with **TypeScript**)  
+- **TailwindCSS** for modern responsive design  
+- **React Router** for navigation  
+- **Axios / Fetch API** for API integration  
 
-* **React** (with **TypeScript**)
-* **TailwindCSS** for modern responsive design
-* **React Router** for navigation
-* **Fetch API / Axios** for API integration
-
-### Backend
-
-* **Node.js** + **Express.js**
-* **MongoDB** (Mongoose ORM)
-* **RESTful APIs** for experiences, bookings, and promo validation
+### ⚙️ Backend  
+- **Node.js** + **Express.js**  
+- **MongoDB** (with Mongoose ORM)  
+- **RESTful APIs** for experiences, bookings, and promo validation  
 
 ---
 
 ## 🧠 System Flow
 
-1. **Home Page** → Lists all experiences.
-2. **Details Page** → Shows selected experience details and available slots.
-3. **Checkout Page** → Collects user info, applies promo, and shows price summary.
-4. **Result Page** → Displays booking confirmation or failure.
+1. **Home Page** → Lists all travel experiences  
+2. **Details Page** → Shows selected experience details and available slots  
+3. **Checkout Page** → Collects user info, applies promo code, and shows price summary  
+4. **Result Page** → Displays booking confirmation or failure message  
+
+---
+
+## 📐 Design Fidelity
+
+The frontend closely follows the [Figma design](https://www.figma.com/design/8X6E1Ev8YdtZ3erV0Iifvb/HD-booking?node-id=0-1&p=f&t=K4scwnxfIHmfbb2a-0) with consistent:  
+- Spacing and typography  
+- Colors and layout  
+- Responsive design for both desktop and mobile  
+- UI states (loading, success, failure, sold-out, etc.)  
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-* Node.js (v18 or above)
-* npm or yarn
-* MongoDB (local or cloud like MongoDB Atlas)
+### 🧰 Prerequisites  
+Ensure you have the following installed:  
+- Node.js (v18 or above)  
+- npm or yarn  
+- MongoDB (local or MongoDB Atlas)  
 
 ---
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/bookit.git
@@ -70,20 +88,20 @@ cd backend
 npm install
 ```
 
-#### Create a `.env` file inside the backend folder:
+Create a `.env` file inside the **backend** folder:  
 
 ```
 PORT=4000
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb+srv://sudiptakhanra0612:fdgdjdfkjgdfk121554@bookit.ptamyxx.mongodb.net/bookit?retryWrites=true&w=majority
 ```
 
-#### Run the backend:
+Run the backend:  
 
 ```bash
 npm run dev
 ```
 
-Your backend will start on `http://localhost:4000`
+Backend runs at → `http://localhost:4000`
 
 ---
 
@@ -94,34 +112,39 @@ cd frontend
 npm install
 ```
 
-#### Create a `.env` file inside the frontend folder:
+Create a `.env` file inside the **frontend** folder:  
 
 ```
-VITE_API_URL=http://localhost:4000/api
+VITE_API_URL=https://bookit-backend-o6sl.onrender.com/api
 ```
 
-#### Run the frontend:
+Run the frontend:  
 
 ```bash
 npm run dev
 ```
 
-Visit the app at `http://localhost:5173` (Vite default port)
+Visit → `https://bookit-rysm.onrender.com/`
 
 ---
 
 ## 🌍 Deployment
 
-* **Frontend:** Deployed on Vercel
-* **Backend:** Hosted on Render / Railway
-* **Database:** MongoDB Atlas
+### Live Links  
+- **Frontend:** https://bookit-rysm.onrender.com/  
+- **Backend API:** https://bookit-backend-o6sl.onrender.com/api  
+
+**Hosting:**  
+- Frontend → Render  
+- Backend → Render  
+- Database → MongoDB Atlas  
 
 ---
 
 ## 🧪 API Endpoints
 
 | Method | Endpoint               | Description                     |
-| ------ | ---------------------- | ------------------------------- |
+|--------|------------------------|---------------------------------|
 | GET    | `/api/experiences`     | Fetch all experiences           |
 | GET    | `/api/experiences/:id` | Fetch single experience details |
 | POST   | `/api/bookings`        | Create a new booking            |
@@ -131,20 +154,22 @@ Visit the app at `http://localhost:5173` (Vite default port)
 
 ## 📸 Sample Data
 
-Use royalty-free images from **Unsplash** or **Pexels** for your experiences.
+Use royalty-free images from **Unsplash** or **Pexels** for experiences and slot visuals.  
 
 ---
 
 ## ✅ Deliverables
 
-* Responsive frontend and working backend integration
-* Full booking flow: *Home → Details → Checkout → Result*
-* Hosted live project + GitHub repository link
+- Fully responsive UI matching Figma  
+- Complete booking flow: *Home → Details → Checkout → Result*  
+- Dynamic data integration with backend APIs  
+- Hosted live app + GitHub repository  
+- Clear README with setup and deployment details  
 
 ---
 
 ## 👨‍💻 Author
 
-**Sudipta Khanra**
-Fullstack Developer Intern — *BookIt Project*
-📧 [sudiptakhanra0612@gmail.com](mailto:sudiptakhanra@gmail.com)
+**Sudipta Khanra**  
+Fullstack Developer Intern — *BookIt Project*  
+📧 [sudiptakhanra0612@gmail.com](mailto:sudiptakhanra0612@gmail.com)
