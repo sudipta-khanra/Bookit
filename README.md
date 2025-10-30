@@ -92,7 +92,7 @@ Create a `.env` file inside the **backend** folder:
 
 ```
 PORT=4000
-
+MONGO_URI=your_mongo_connection_string_here
 
 Run the backend:  
 
